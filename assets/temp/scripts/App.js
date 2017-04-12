@@ -12237,7 +12237,7 @@
 	            this.game.load.image("bar2", "images/life/bar2.png");
 	            this.game.load.spritesheet("soundButtons", "images/ui/soundButtons-round1.png", 44, 44, 4);
 	            this.game.load.audio("backgroundMusic", "sounds/background.mp3");
-	            this.game.load.spritesheet("worms", "images/main/monster.png", 38, 45, 2);
+	            this.game.load.spritesheet("worms", "images/main/monster3.png", 40, 45, 3);
 	        }
 	    }, {
 	        key: "create",
