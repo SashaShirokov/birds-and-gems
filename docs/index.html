@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=0, initial-scale=1,minimum-scale=1, maximum-scale=1, width=device-width, minimal-ui=1">
+    <title>Birds & Gems</title>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" href="temp/styles/style.css">
+</head>
+<body>
+  <header class="site-header">
+      <div class="wrapper">
+        <div class="site-header__logo">
+            <img src="images/phaser.svg">
+        </div>
+            <div class="site-header__btn">
+                <a href="#" class="btn open-modal">Get in Touch</a>
+            </div>
+        <nav class="primary-nav">
+            <ul>
+                <li><a href="#our-beginning" id="our-beginning-link">Our Beginning</a></li>
+                <li><a href="#features" id="features-link">Our workflow</a></li>
+                <li><a href="#team" id="team-link">Our Team</a></li>
+            </ul>
+        </nav>
+      </div>
+  </header>
+
+  <div id="game" class="page-section page-section--t-padding">
+      <div class="wrapper wrapper--wide">
+          <div class="row row--gutters">
+            <div class="row__3">
+                <div class="about-game">
+                  <h3 class="about-game__title">Rules</h3>
+                  <p><span class="about-game__level1">Level 1:</span> Your goal is to collect any 10 gems within 1 minute.</p>
+                  <p><span class="about-game__level2">Level 2:</span> Your goal is to collect 7 gems the bird is thinking about. The wrong gem reduces your time bar by 5 seconds and the right gem adds 5 seconds.</p>
+                  <p><span class="about-game__level3">Level 3:</span> Your goal is to collect 7 gems the bird is thinking about. On this level the wrong gem reduces your time by 3 seconds, the right one adds 5 seconds and monsters take out 7 seconds.
+                </div>
+            </div>
+            <div class="row__6">
+                <div id="ph_game"></div>
+            </div>
+            <div class="row__3">
+                <div class="about-game">
+                  <h3 class="about-game__title">Control</h3>
+                  <p>The gravity is applied to the bird that always pulls it down. Whenever you click the left mouse button you  partially take the gravity off and make the bird fly. Play around and you will get accustomed to it. Enjoy your game!</p>
+                </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="our-beginning" class="page-section" data-matching-link="#our-beginning-link">
+      <div class="wrapper">
+          <h2 class="headline headline--centered">The first game we created was the task of <strong>rolling scopes</strong>.</h2>
+          <h3 class="headline headline--centered headline--orange headline--small headline--narrow headline--b-margin">From now on we are going to make exciting games for everyone.</h3>
+          <div class="wrapper wrapper--narrow wrapper--b-margin">
+              <img src="images/phaser.png" alt="Phaser">
+          </div>
+
+          <div class="row row--gutters">
+              <div class="row__4 row__4--larger">
+                   <img src="images/test.jpg" alt="Phaser">
+              </div>
+              <div class="row__8 row__8--smaller">
+                  <div class="generic-content-container">
+                      <h2 class="headline headline--no-t-margin">Here&rsquo;s how the game is built&hellip;</h2>
+                      <p>From the phaser we download just Phaser.min.js file. When we declare a new Phaser game we can use three modes: Phaser.WebGL, Phaser.Canvas and Phaser.Auto (this mode we used in the game). And in the same function we add all the states we're going to have.</p>
+                      <p>In the state itself we allways use three main functions. The preload() function is where we load all images and sounds in our library. In create() function we use the library. This is where we set up objects, variables, sounds, text. It is here all parts of the game come together: good guys, bad guys, explosions etc.. And usually we position it here as well. The update() function is a constant running loop, and we use that to check things like collisions, movements and all sorts of things like that.</p>
+                      <p>In the following resource <a href="https://opengameart.org/" target="_blank">openGameArt</a> you can find a lot of wonderful assets of sounds and images. Most of them are free to use even in commercial games, but check the licence first.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div id="features" class="page-section page-section--blue" data-matching-link="#features-link">
+      <div class="wrapper">
+
+          <h2 class="section-title"><img class="section-title__icon" src="images/icons/star.svg">Our <strong>Workflow</strong></h2>
+
+          <div class="row row--gutters-large generic-content-container">
+              <div class="row__6">
+                  <div class="feature-item">
+                      <img class="feature-item__icon" src="images/icons/rain.svg">
+                      <h3 class="feature-item__title">Gulp Automation</h3>
+                      <p>Gulp is at the heart of all automation that is set up in this project. Since gulp itself does not do anything it is lightweight, efficient and runs quickly. There is a gulp plugin to automate almost any task you can think of. We use three key tools of gulp: gulp.src()  gulp.dest() and pipe(). And of course gulp.watch that makes automation possible.</p>
+                  </div>
+
+                  <div class="feature-item">
+                      <img class="feature-item__icon"  src="images/icons/globe.svg">
+                      <h3 class="feature-item__title">CSS Organization</h3>
+                      <p>We follow three key concepts in order to write super organized CSS: 1. File Architecture - we break our css code into multiple files and each file is relativly small and has a specific purpose. 2. Identify patterns in design. 3. We have the rules to follow for creating class names and writing our css selectors -  B.E.M. methodology.</p>
+                  </div>
+              </div>
+              <div class="row__6">
+                  <div class="feature-item">
+                      <img class="feature-item__icon"  src="images/icons/wifi.svg">
+                      <h3 class="feature-item__title">PostCSS</h3>
+                      <p>We utilize a new post-processor that lets us to do some of the following things in css. For example, we can save a сertain color into a variable and reuse it throughout our css. We also can write nested css. This tool passes our code through filter that creates a new file where the code is automaticly converted into regular css that will work in a web browser.</p>
+                  </div>
+                  <div class="feature-item">
+                      <img class="feature-item__icon"  src="images/icons/fire.svg">
+                      <h3 class="feature-item__title">Webpack and Babel</h3>
+                      <p>In JS organization we use webpack to bundle all our individual files together into a single file and that bundled file will work in a web browser. And with the help of Babel we are able to write modern JS and to have excellent browser support at the same time.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="team" class="page-section page-section--team" data-matching-link="#team-link">
+      <div class="wrapper">
+          <h2 class="section-title section-title--blue"><img class="section-title__icon" src="images/icons/comment.svg">Our Amazing <strong>Team  :)</strong></h2>
+
+          <div class="row row--gutters row--equal-height row--t-padding generic-content-container">
+              <div class="row__4">
+                  <div class="team">
+                      <div class="team__photo">
+                          <img src="images/lego1.png">
+                      </div>
+                      <h3 class="team__title">Aleksandr Shirokov</h3>
+                      <h4 class="team__subtitle">author</h4>
+                      <p>I built the game and landing page within the course of Rolling Scopes in 2017. I utilized the Phaser framework and many other tools to make this project. At some time in the future I will optimize the game for mobile and tablet devices.</p>
+                  </div>
+              </div>
+
+              <div class="row__4">
+                  <div class="team">
+                    <div class="team__photo">
+                        <img src="images/lego3.jpg">
+                    </div>
+                    <h3 class="team__title">Unknown</h3>
+                    <h4 class="team__subtitle">developer</h4>
+                    <p class="team__position">The position is vacant!!!</p>
+                    <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.&rdquo;</p>
+                  </div>
+              </div>
+
+              <div class="row__4">
+                  <div class="team">
+                    <div class="team__photo">
+                        <img src="images/lego2.jpg">
+                    </div>
+                    <h3 class="team__title">Unknown</h3>
+                    <h4 class="team__subtitle">desiner</h4>
+                    <p class="team__position">The position is vacant!!!</p>
+                    <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident.&rdquo;</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <footer class="site-footer">
+      <div class="wrapper">
+          <p><span class="site-footer__text">Copyright &copy; 2017 Games with Phaser. All rights reserved.</span> <a href="#" class="btn btn--orange open-modal">Get in Touch</a></p>
+      </div>
+  </footer>
+  <div class='modal'>
+      <div class="modal__inner">
+          <h2 class="section-title section-title--blue section-title--less-margin"><img class="section-title__icon" src="images/icons/mail.svg">Get in  <strong>Touch</strong></h2>
+          <div class="wrapper wrapper--small-narrow">
+              <p class="modal__description">We will have an online order system in place soon. Until then, connect with us on any of the platforms below!</p>
+          </div>
+          <div class="social-icons">
+              <a href="#" class="social-icons__icon"><img class="icon" src="images/icons/facebook.svg"></img></a>
+              <a href="#" class="social-icons__icon"><img class="icon" src="images/icons/twitter.svg"></img></a>
+              <a href="#" class="social-icons__icon"><img class="icon" src="images/icons/youtube.svg"></img></a>
+              <a href="#" class="social-icons__icon"><img class="icon" src="images/icons/instagram.svg"></img></a>
+          </div>
+      </div>
+      <div class="modal__close">X</div>
+  </div>
+
+
+    <script src="./scripts/phaser.min.js"></script>
+    <script src="./temp/scripts/App.js"></script>
+</body>
+</html>

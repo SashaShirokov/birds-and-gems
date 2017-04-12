@@ -1,0 +1,30 @@
+.site-header {
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    background-color: rgba($mainBlue, .6);
+    position: fixed;
+
+    &--dark {
+        background-color: rgba(23, 51, 72, .85);
+    }
+
+    &__btn {
+        float: right;
+    }
+
+    &__logo {
+      transform: scaleX(.85);
+        position: absolute;
+        top: 0;
+        left: auto;
+        transition: all .4s ease-out;
+        transform-origin: 50% 0;
+        background-color: $mainBlue;
+        padding: 10px 5px 10px 25px;
+        border-radius: 13px;
+        .site-header--dark & {
+            transform: scale(.48);
+        }
+    }
+}

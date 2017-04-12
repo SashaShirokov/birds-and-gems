@@ -1,0 +1,28 @@
+.about-game {
+    padding: 1.8rem;
+    line-height: 1.6;
+    font-size: 1rem;
+
+
+
+    &__title {
+        text-align: center;
+        color: $mainBlue;
+        font-size: 1.5rem;
+    }
+
+    &__level1 {
+        color: #0FA302;
+        font-weight: 700;
+    }
+
+    &__level2 {
+        color: yellow;
+        font-weight: 700;
+    }
+
+    &__level3 {
+        color: blue;
+        font-weight: 700;
+    }
+}
