@@ -12230,14 +12230,14 @@
 	        key: "preload",
 	        value: function preload() {
 	            this.game.load.spritesheet("bird2", "images/main/bird2.png", 91, 64, 8);
-	            this.game.load.image("background", "images/main/background1.jpg");
+	            this.game.load.image("background", "images/main/backgroundlevel3.png");
 	            this.game.load.spritesheet("fruit", "images/main/gems3.png", 50, 52, 6);
 	            this.game.load.image("goal", "images/main/wish.png");
 	            this.game.load.image("bar1", "images/life/bar1.png");
 	            this.game.load.image("bar2", "images/life/bar2.png");
 	            this.game.load.spritesheet("soundButtons", "images/ui/soundButtons-round1.png", 44, 44, 4);
 	            this.game.load.audio("backgroundMusic", "sounds/background.mp3");
-	            this.game.load.spritesheet("worms", "images/main/monster3.png", 40, 45, 3);
+	            this.game.load.spritesheet("worms", "images/main/monster3.png", 42, 45, 3);
 	        }
 	    }, {
 	        key: "create",
@@ -12344,7 +12344,7 @@
 	            var worm = this.worms.getFirstDead();
 	            var yy = this.game.rnd.integerInRange(0, this.game.height - 70);
 	            var xx = this.game.width - 100;
-	            var type = this.game.rnd.integerInRange(0, 1);
+	            var type = this.game.rnd.integerInRange(0, 2);
 
 	            worm.frame = type;
 	            worm.reset(xx, yy);
