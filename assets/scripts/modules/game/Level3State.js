@@ -111,7 +111,7 @@ class Level3 extends Phaser.State {
         let worm = this.worms.getFirstDead();
         let yy = this.game.rnd.integerInRange(0, this.game.height - 70);
         let xx = this.game.width - 100;
-        let type = this.game.rnd.integerInRange(0, 1);
+        let type = this.game.rnd.integerInRange(0, 2);
 
         worm.frame = type;
         worm.reset(xx, yy);
