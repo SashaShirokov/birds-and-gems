@@ -12230,7 +12230,7 @@
 	        key: "preload",
 	        value: function preload() {
 	            this.game.load.spritesheet("bird2", "images/main/bird2.png", 91, 64, 8);
-	            this.game.load.image("background", "images/main/backgroundlevel3.png");
+	            this.game.load.image("background", "images/main/background1.jpg");
 	            this.game.load.spritesheet("fruit", "images/main/gems3.png", 50, 52, 6);
 	            this.game.load.image("goal", "images/main/wish.png");
 	            this.game.load.image("bar1", "images/life/bar1.png");
