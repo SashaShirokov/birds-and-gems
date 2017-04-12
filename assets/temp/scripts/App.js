@@ -12333,7 +12333,7 @@
 	        key: "setListeners",
 	        value: function setListeners() {
 	            this.game.time.events.loop(Phaser.Timer.SECOND, this.fireFruit, this);
-	            this.game.time.events.loop(Phaser.Timer.SECOND * 2.8, this.fireWorms, this);
+	            this.game.time.events.loop(Phaser.Timer.SECOND * 3, this.fireWorms, this);
 	            this.game.time.events.loop(Phaser.Timer.SECOND, this.life, this);
 	            this.btnMusic.inputEnabled = true;
 	            this.btnMusic.events.onInputDown.add(this.toggleMusic, this);
@@ -12349,7 +12349,7 @@
 	            worm.frame = type;
 	            worm.reset(xx, yy);
 	            worm.enabled = true;
-	            worm.body.velocity.x = -270;
+	            worm.body.velocity.x = -275;
 	        }
 	    }, {
 	        key: "toggleMusic",
