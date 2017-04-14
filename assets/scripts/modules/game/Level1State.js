@@ -47,12 +47,12 @@ class Level1 extends Phaser.State {
         this.scoreText = this.game.add.text(this.game.world.centerX, this.top + 60, "0");
         this.scoreText.fill = "#d59541";
         this.scoreText.fontSize = 32;
-        this.scoreText.anchor.set(0.5, 0.3);
+        this.scoreText.anchor.set(0.5, 0.5);
 
         this.scoreLabel = this.game.add.text(this.game.world.centerX, this.top + 20, "Level 1");
         this.scoreLabel.fill = "#00EB71";
         this.scoreLabel.fontSize = 32;
-        this.scoreLabel.anchor.set(-2.55, 0.3);
+        this.scoreLabel.anchor.set(3.5, 0.3);
 
         // Lifes
         this.bar2 = this.game.add.image(0, 0, "bar2");
@@ -66,7 +66,7 @@ class Level1 extends Phaser.State {
         this.lifeGroup.cameraOffset.setTo(this.game.width / 2 - this.lifeGroup.width / 2, 15);
 
         // Sound buttons
-        this.btnMusic = this.game.add.sprite(10, 10, "soundButtons");
+        this.btnMusic = this.game.add.sprite(746, 10, "soundButtons");
         this.btnMusic.frame = 2;
 
         // Enable bird to have gravity

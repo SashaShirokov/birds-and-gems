@@ -60,7 +60,7 @@ class Level3 extends Phaser.State {
         this.scoreLabel = this.game.add.text(this.game.world.centerX, this.top + 20, "Level 3");
         this.scoreLabel.fill = "#2f5572";
         this.scoreLabel.fontSize = 32;
-        this.scoreLabel.anchor.set(-2.55, 0.3);
+        this.scoreLabel.anchor.set(3.5, 0.3);
 
         // Lifes
         this.bar2 = this.game.add.image(0, 0, "bar2");
@@ -84,7 +84,7 @@ class Level3 extends Phaser.State {
         this.goalGroup.x = 50;
 
         // Sound buttons
-        this.btnMusic = this.game.add.sprite(10, 10, "soundButtons");
+        this.btnMusic = this.game.add.sprite(746, 10, "soundButtons");
         this.btnMusic.frame = 2;
 
         // Enable bird to have gravity

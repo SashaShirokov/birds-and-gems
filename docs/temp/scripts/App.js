@@ -11828,12 +11828,12 @@
 	            this.scoreText = this.game.add.text(this.game.world.centerX, this.top + 60, "0");
 	            this.scoreText.fill = "#d59541";
 	            this.scoreText.fontSize = 32;
-	            this.scoreText.anchor.set(0.5, 0.3);
+	            this.scoreText.anchor.set(0.5, 0.5);
 
 	            this.scoreLabel = this.game.add.text(this.game.world.centerX, this.top + 20, "Level 1");
 	            this.scoreLabel.fill = "#00EB71";
 	            this.scoreLabel.fontSize = 32;
-	            this.scoreLabel.anchor.set(-2.55, 0.3);
+	            this.scoreLabel.anchor.set(3.5, 0.3);
 
 	            // Lifes
 	            this.bar2 = this.game.add.image(0, 0, "bar2");
@@ -11847,7 +11847,7 @@
 	            this.lifeGroup.cameraOffset.setTo(this.game.width / 2 - this.lifeGroup.width / 2, 15);
 
 	            // Sound buttons
-	            this.btnMusic = this.game.add.sprite(10, 10, "soundButtons");
+	            this.btnMusic = this.game.add.sprite(746, 10, "soundButtons");
 	            this.btnMusic.frame = 2;
 
 	            // Enable bird to have gravity
@@ -12044,7 +12044,7 @@
 	            this.scoreLabel = this.game.add.text(this.game.world.centerX, this.top + 20, "Level 2");
 	            this.scoreLabel.fill = "#E8D900";
 	            this.scoreLabel.fontSize = 32;
-	            this.scoreLabel.anchor.set(-2.55, 0.3);
+	            this.scoreLabel.anchor.set(3.5, 0.3);
 
 	            // Lifes
 	            this.bar2 = this.game.add.image(0, 0, "bar2");
@@ -12068,7 +12068,7 @@
 	            this.goalGroup.x = 50;
 
 	            // Sound buttons
-	            this.btnMusic = this.game.add.sprite(10, 10, "soundButtons");
+	            this.btnMusic = this.game.add.sprite(746, 10, "soundButtons");
 	            this.btnMusic.frame = 2;
 
 	            // Enable bird to have gravity
@@ -12290,7 +12290,7 @@
 	            this.scoreLabel = this.game.add.text(this.game.world.centerX, this.top + 20, "Level 3");
 	            this.scoreLabel.fill = "#2f5572";
 	            this.scoreLabel.fontSize = 32;
-	            this.scoreLabel.anchor.set(-2.55, 0.3);
+	            this.scoreLabel.anchor.set(3.5, 0.3);
 
 	            // Lifes
 	            this.bar2 = this.game.add.image(0, 0, "bar2");
@@ -12314,7 +12314,7 @@
 	            this.goalGroup.x = 50;
 
 	            // Sound buttons
-	            this.btnMusic = this.game.add.sprite(10, 10, "soundButtons");
+	            this.btnMusic = this.game.add.sprite(746, 10, "soundButtons");
 	            this.btnMusic.frame = 2;
 
 	            // Enable bird to have gravity
@@ -12722,11 +12722,11 @@
 	        key: "create",
 	        value: function create() {
 	            this.buttonStart = this.game.add.button(this.game.world.centerX, this.game.world.centerY + 100, "buttons", this.startGame, this, 6, 7, 6);
-	            this.buttonStart.anchor.set(0.5, 0.2);
+	            this.buttonStart.anchor.set(0.5, 0);
 
 	            // Bird
 	            this.bird = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, "bird");
-	            this.bird.anchor.set(0.5, 0.7);
+	            this.bird.anchor.set(0.5, 1);
 	            this.bird.animations.add('fly', [0, 1, 2, 3], 12, true);
 	            this.bird.animations.play('fly');
 	            this.game.stage.backgroundColor = "#26C9FF";
@@ -12735,7 +12735,7 @@
 	                font: "50px Gloria+Hallelujah",
 	                fill: "#2f5572",
 	                align: "center" });
-	            this.inText.anchor.set(0.5, 0.5);
+	            this.inText.anchor.set(0.5, 0.2);
 	        }
 	    }, {
 	        key: "startGame",
@@ -12787,11 +12787,11 @@
 	        key: "create",
 	        value: function create() {
 	            this.buttonStart = this.game.add.button(this.game.world.centerX, this.game.world.centerY + 100, "buttons", this.startGame, this, 6, 7, 6);
-	            this.buttonStart.anchor.set(0.5, 0.2);
+	            this.buttonStart.anchor.set(0.5, 0);
 
 	            // Bird
 	            this.bird = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, "bird");
-	            this.bird.anchor.set(0.5, 0.7);
+	            this.bird.anchor.set(0.5, 1);
 	            this.bird.animations.add('fly', [0, 1, 2, 3], 12, true);
 	            this.bird.animations.play('fly');
 	            this.game.stage.backgroundColor = "#26C9FF";
@@ -12800,7 +12800,7 @@
 	                font: "50px Gloria+Hallelujah",
 	                fill: "#2f5572",
 	                align: "center" });
-	            this.inText.anchor.set(0.5, 0.5);
+	            this.inText.anchor.set(0.5, 0.2);
 	        }
 	    }, {
 	        key: "startGame",
