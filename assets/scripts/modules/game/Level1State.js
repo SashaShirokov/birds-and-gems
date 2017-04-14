@@ -123,14 +123,14 @@ class Level1 extends Phaser.State {
 
     fireFruit() {
         let fruit = this.fruit.getFirstDead();
-        let yy = this.game.rnd.integerInRange(0, this.game.height - 120);
+        let yy = this.game.rnd.integerInRange(0, this.game.height - 80);
         let xx = this.game.width - 100;
         let type = this.game.rnd.integerInRange(0, 5);
 
         fruit.frame = type;
         fruit.reset(xx, yy);
         fruit.enabled = true;
-        fruit.body.velocity.x = - 230;
+        fruit.body.velocity.x = - 240;
     }
 
     flap() {

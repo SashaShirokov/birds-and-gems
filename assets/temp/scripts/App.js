@@ -11910,14 +11910,14 @@
 	        key: "fireFruit",
 	        value: function fireFruit() {
 	            var fruit = this.fruit.getFirstDead();
-	            var yy = this.game.rnd.integerInRange(0, this.game.height - 120);
+	            var yy = this.game.rnd.integerInRange(0, this.game.height - 80);
 	            var xx = this.game.width - 100;
 	            var type = this.game.rnd.integerInRange(0, 5);
 
 	            fruit.frame = type;
 	            fruit.reset(xx, yy);
 	            fruit.enabled = true;
-	            fruit.body.velocity.x = -230;
+	            fruit.body.velocity.x = -240;
 	        }
 	    }, {
 	        key: "flap",
@@ -12657,7 +12657,7 @@
 	        value: function create() {
 	            // Buttons
 	            this.buttonPlayAgain = this.game.add.button(this.game.world.centerX, this.game.world.centerY + 100, "buttons", this.replay, this, 0, 1, 0);
-	            this.buttonPlayAgain.anchor.set(0.5, 0.2);
+	            this.buttonPlayAgain.anchor.set(0.5, 0);
 
 	            // Bird
 	            this.bird = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, "bird");
@@ -12668,7 +12668,7 @@
 	            this.game.stage.backgroundColor = "#26C9FF";
 
 	            this.titleText = this.game.add.text(this.game.world.centerX, 60, "Don't give up", { font: "50px Gloria+Hallelujah", fill: "#FF9100", stroke: "#222222", strokeThickness: 4, align: "center" });
-	            this.titleText.anchor.set(0.5, 0.5);
+	            this.titleText.anchor.set(0.5, 0.2);
 	        }
 	    }, {
 	        key: "replay",

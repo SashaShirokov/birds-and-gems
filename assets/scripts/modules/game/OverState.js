@@ -6,7 +6,7 @@ class Over extends Phaser.State {
     create() {
         // Buttons
         this.buttonPlayAgain = this.game.add.button(this.game.world.centerX, this.game.world.centerY + 100, "buttons", this.replay, this, 0, 1, 0);
-        this.buttonPlayAgain.anchor.set(0.5, 0.2);
+        this.buttonPlayAgain.anchor.set(0.5, 0);
 
         // Bird
         this.bird = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, "bird");
@@ -17,7 +17,7 @@ class Over extends Phaser.State {
         this.game.stage.backgroundColor = "#26C9FF";
 
         this.titleText = this.game.add.text(this.game.world.centerX, 60, "Don't give up",{ font: "50px Gloria+Hallelujah", fill: "#FF9100", stroke: "#222222", strokeThickness: 4, align: "center" });
-        this.titleText.anchor.set(0.5, 0.5);
+        this.titleText.anchor.set(0.5, 0.2);
     }
     replay() {
         this.game.state.start("Level1");
